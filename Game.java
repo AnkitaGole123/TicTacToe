@@ -53,19 +53,10 @@ public class Game {
     boolean winner() {
         boolean doesMatch = true;
         String turn = this.turn.getTurn();
-        for (Position winningPosition: winningPositions) {
-            doesMatch &= board.match(winningPosition,turn);
+        for (Position winningPosition : winningPositions) {
+            doesMatch &= board.match(winningPosition, turn);
         }
         return doesMatch;
-
-
-//        boolean flag = true;
-//        String[][] board = this.board.board;
-//        String turn = this.turn.getTurn();
-//        for (int i = 0; i < winningMoves.length; i++) {
-//            flag &= board[winningMoves[i][0]][winningMoves[i][1]].equals(turn);
-//        }
-//        return flag;
     }
 }
 
