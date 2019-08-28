@@ -2,12 +2,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Game {
-    Board board = new Board();
-    Turn turn = new Turn();
+    private Board board = new Board();
+    private Turn turn = new Turn();
 
-    List<Position> winningPositions = Arrays.asList(new Position(0,0), new Position(0,1), new Position(0,2));
+    private List<Position> winningPositions = Arrays.asList(new Position(0,0), new Position(0,1), new Position(0,2));
 
-    public Game() {
+    Game() {
         this.winningMoves = new int[][]{{0, 0}, {0, 1}, {0, 2}};
 
     }
@@ -50,7 +50,7 @@ public class Game {
         }
         return getWinner() == null;
     }
-    boolean winner() {
+    private boolean winner() {
         boolean doesMatch = true;
         String turn = this.turn.getTurn();
         for (Position winningPosition : winningPositions) {

@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class TicTacToe {
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_PURPLE = "\u001B[35m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_PURPLE = "\u001B[35m";
 
     public static void main(String[] args) {
         System.out.println(ANSI_RED + "------lets play TicTacToe------" + ANSI_RESET);
