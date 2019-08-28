@@ -9,7 +9,7 @@ public class TicTacToe {
         System.out.println(ANSI_RED + "------lets play TicTacToe------" + ANSI_RESET);
         Game game = new Game();
         while (game.isRunning()) {
-            game.display();
+            System.out.println(game.display());
             game.play(getInput());
         }
         game.display();

@@ -1,7 +1,7 @@
-public class Turn {
-    public int count;
-    public String symbol;
-    public String changeTurn(){
+class Turn {
+    private int count;
+    private String symbol;
+    String changeTurn(){
         if (count%2 == 0){
             symbol = "x";
         }
